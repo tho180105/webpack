@@ -1,1 +1,26 @@
-
+$warning-color:#ffc107;
+.pagination{
+    margin: 40px auto;
+    padding-bottom: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .item{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border: 1px rgb(210, 203, 185,0.5) solid;
+        border-radius: 2px;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+            background-color: $warning-color !important;
+        }
+        &-active{
+            color: black;
+            background-color: $warning-color;
+        }
+    }
+    
+}
