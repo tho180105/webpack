@@ -1,1 +1,75 @@
+@import "src/pages/Home/Skin/common-Home";
+.todo-border {
+  width: 450px;
+  //background-image: url("./../../../images.png");
+  //margin: 0 auto;
+  .todo-form {
+    fieldset{
+      border:3px rgba(200,200,200,1) solid;
+      border-radius: 5px;
+      padding :10px 30px;
+    }
+    legend{
+      font-size: 25px;
+      font-weight: 400;
+    }
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      min-height: 30px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      .form-label {
+        font-size: 18px;
+      }
 
+      .form-input-text {
+        width: 280px;
+        @include form-input;
+        &:hover{
+        background-color: #f8f8f8;
+        }
+      }
+      .form-input-date {
+        @include form-input;
+        &:hover{
+          background-color: #f8f8f8;
+        }
+      }
+      .form-select {
+        @include form-input;
+        height: 29px;
+
+        &:hover{
+          background-color: #f8f8f8;
+        }
+
+      }
+
+    }
+
+  }
+}
+.show{
+  display: block;
+}
+.hide{
+  display:  none !important;
+}
+.disable{
+  pointer-events: none;
+  opacity: 0.2;
+}
+.form-message {
+  font-size: 13px;
+  font-weight: 500;
+  color: #e70202;
+}
+.form-group-input{
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+}
+.invalid{
+  border: 1px solid red !important;
+}
