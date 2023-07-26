@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./public/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": [ "dom","es2021"]
+  }
+}
