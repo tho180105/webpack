@@ -1,1 +1,9 @@
-
+{
+  "login": "Login",
+  "todo": "Todo",
+  "log": "Log",
+  "logout": "Logout",
+  "light": "Light",
+  "dark": "Dark",
+  "welcome": "Welcome"
+}
