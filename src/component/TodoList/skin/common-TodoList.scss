@@ -1,1 +1,81 @@
+@import 'src/pages/Home/Skin/common-Home';
+table {
+  min-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+  table-layout: fixed;
+  thead {
+    font-weight: 500;
+  }
+
+  tr {
+    border-bottom: 1px solid gray;
+    .idColumn{
+      width: 65px;
+      //max-width: 65px;
+    }
+    &:hover {
+      background-color: rgb(230, 230, 230);
+    }
+
+    &:nth-child(even) {
+      background: {
+        color: rgba(242, 242, 242, 0.53);
+      }
+
+      &:hover {
+        background-color: rgb(230, 230, 230);
+      }
+    }
+
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .td-fix-15 {
+      text-align: center;
+      width: 15%;
+    }
+
+    .td-id {
+      min-width: 10%;
+    }
+
+    .td-checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.icon-table-warning{
+  background-color: $warning-color;
+  color: black;
+  border-radius: 2px;
+  margin :2px;
+  width:28px;
+  height: 28px;
+  border: none;
+}
+.icon-table-danger{
+  background-color: $danger-color;
+  color: white;
+  border-radius: 2px;
+  margin :2px;
+  width:28px;
+  height: 28px;
+  border: none;
+}
+
+thead tr td{
+  span{
+    margin-right: 10px;
+  }
+}
+
+td{
+  word-wrap: break-word;         /* All browsers since IE 5.5+ */
+  overflow-wrap: break-word;
+}
 
